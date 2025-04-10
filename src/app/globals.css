@@ -5,11 +5,17 @@
   --foreground: #171717;
 }
 
+@import 'tailwindcss';
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-moneygraphy: var(--font-moneygraphy);
+  --font-pretendard: var(--font-pretendard);
+  --font-suit: var(--font-suit);
+  --font-yclover: var(--font-yclover);
 }
 
 @media (prefers-color-scheme: dark) {

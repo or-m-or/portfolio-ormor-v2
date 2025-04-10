@@ -38,11 +38,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${moneygraphy.variable} ${pretendard.variable} ${yclover.variable} ${suit.variable} font-pretendard antialiased`}
-      >
-        {children}
+    <html lang="ko" className={`${moneygraphy.variable} ${pretendard.variable} ${suit.variable} ${yclover.variable}`}>
+      <body >
+        <main>{children}</main>
       </body>
     </html>
   );
