@@ -1,41 +1,18 @@
+'use client';
+
+import { ShootingStars } from '@/components/home/ShootingStars';
+import { StarsBackground } from '@/components/home/StarsBackground';
+
 export default function Home() {
   return (
-    <div className='text-3xl'>
-      <p className='font-thin'>전역 글꼴 Test</p>
-      <p className='font-extralight'>전역 글꼴 Test</p>
-      <p className='font-light'>전역 글꼴 Test</p>
-      <p className='font-regular'>전역 글꼴 Test</p>
-      <p className='font-medium'>전역 글꼴 Test</p>
-      <p className='font-yclover font-semibold'>PROJECT SKILL CONTACT 클로바</p>
-      <p className='font-moneygraphy font-bold'>PROJECT SKILL CONTACT 머니그래피</p>
-      <p className='font-suit font-extrabold'>PROJECT SKILL CONTACT 수트</p>
-      <p className='font-yclover font-black'>PROJECT SKILL CONTACT</p>
-      <p className='font-moneygraphy font-black'>PROJECT SKILL CONTACT</p>
-      <p className='font-suit font-black'>PROJECT SKILL CONTACT</p>
-      <p className='font-pretendard font-black'>PROJECT SKILL CONTACT 프리텐다드</p>
-      <p className='font-pretendard font-black'>PROJECT SKILL CONTACT 프리텐다드</p>
-      <p className='font-pretendard font-black'>PROJECT SKILL CONTACT 프리텐다드</p>
-      <p className='font-pretendard font-black'>PROJECT SKILL CONTACT 프리텐다드</p>
-      <p className='font-pretendard font-black'>PROJECT SKILL CONTACT 프리텐다드</p>
-      <p className='font-pretendard font-black'>PROJECT SKILL CONTACT 프리텐다드</p>
-      <p className='font-pretendard font-black'>PROJECT SKILL CONTACT 프리텐다드</p>
-      <p className='font-pretendard font-black'>PROJECT SKILL CONTACT 프리텐다드</p>
-      <p className='font-pretendard font-black'>PROJECT SKILL CONTACT 프리텐다드</p>
-      <p className='font-pretendard font-black'>PROJECT SKILL CONTACT 프리텐다드</p>
-      <p className='font-suit font-extrabold'>PROJECT SKILL CONTACT 수트</p>
-      <p className='font-pretendard font-black'>PROJECT SKILL CONTACT 프리텐다드</p>
-      <p className='font-pretendard font-black'>PROJECT SKILL CONTACT 프리텐다드</p>
-      <p className='font-pretendard font-black'>PROJECT SKILL CONTACT 프리텐다드</p>
-      <p className='font-pretendard font-black'>PROJECT SKILL CONTACT 프리텐다드</p>
-      <p className='font-pretendard font-black'>PROJECT SKILL CONTACT 프리텐다드</p>
-      <p className='font-pretendard font-black'>PROJECT SKILL CONTACT 프리텐다드</p>
-      <p className='font-pretendard font-black'>PROJECT SKILL CONTACT 프리텐다드</p>
-      <p className='font-pretendard font-black'>PROJECT SKILL CONTACT 프리텐다드</p>
-      <p className='font-pretendard font-black'>PROJECT SKILL CONTACT 프리텐다드</p>
-      <p className='font-pretendard font-black'>PROJECT SKILL CONTACT 프리텐다드</p>
-      <p className='font-pretendard font-black'>PROJECT SKILL CONTACT 프리텐다드</p>
-      <p className='font-pretendard font-black'>PROJECT SKILL CONTACT 프리텐다드</p>
-      <p className='font-pretendard font-black'>PROJECT SKILL CONTACT 프리텐다드</p>
+    <div className='relative min-h-screen'>
+      <div className='relative flex h-[40rem] w-full flex-col items-center justify-center rounded-md'>
+        <h2 className='relative z-10 mx-auto flex max-w-5xl flex-col items-center gap-2 bg-gradient-to-b from-neutral-800 via-white to-white bg-clip-text text-center text-4xl font-bold tracking-tight text-transparent md:flex-row md:gap-8 md:text-7xl md:leading-tight'>
+          <span>HEO TAE HWAN</span>
+        </h2>
+        <ShootingStars />
+        <StarsBackground />
+      </div>
     </div>
   );
 }
