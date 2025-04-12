@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
 import Navbar from '@/components/common/Navbar';
+import Footer from '@/components/common/Footer';
 
 const suit = localFont({
   src: './fonts/SUIT-Variable.woff2',
@@ -46,6 +47,7 @@ export default function RootLayout({
       <body className='font-moneygraphy'>
         <Navbar />
         <main className='min-h-screen pt-16'>{children}</main>
+        <Footer />
       </body>
     </html>
   );
