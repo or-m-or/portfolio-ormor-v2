@@ -35,7 +35,7 @@ export default function Navbar() {
           {/* 로고 */}
           <Link href='/' className='flex-shrink-0'>
             <Image
-              src='/images/icons/ormor-logo.png'
+              src='/icons/OrmorLogo.png'
               alt='ormor logo'
               width={40}
               height={40}
