@@ -43,7 +43,7 @@ export default function RootLayout({
       lang='ko'
       className={`${moneygraphy.variable} ${pretendard.variable} ${suit.variable} ${yclover.variable}`}
     >
-      <body className='font-moneygraphy'>
+      <body>
         <Navbar />
         <main className='min-h-screen pt-16'>{children}</main>
       </body>
