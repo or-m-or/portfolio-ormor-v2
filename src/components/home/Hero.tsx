@@ -17,9 +17,9 @@ export const Hero = () => {
       <div className='relative z-10 flex flex-wrap justify-center gap-4 text-lg text-white/80'>
         <span>Server Developer</span>
         <span>•</span>
-        <span>AI Developer</span>
+        <span>Software Developer</span>
         <span>•</span>
-        <span>Problem Solver</span>
+        <span>AI Developer</span>
       </div>
       <div className='relative z-10 mt-4 flex flex-wrap justify-center gap-4'>
         <UrlTag
