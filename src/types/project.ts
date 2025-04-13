@@ -1,4 +1,5 @@
-export type ProjectTag = 'ALL' | 'Personal' | 'Team';
+export type ProjectTag = 'Personal' | 'Team';
+export type FilterTag = 'ALL' | ProjectTag;
 
 export type TechStack =
   | 'React'
