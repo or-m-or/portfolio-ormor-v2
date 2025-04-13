@@ -5,17 +5,13 @@ import { TechStackTag } from './TechStackTag';
 import { IoLink } from 'react-icons/io5';
 import { Carousel, Card } from './ImageCardCarousel';
 import Image from 'next/image';
-import { useSearchParams } from 'next/navigation';
+import { YouTubeEmbed } from './YoutubeEmbed';
 
 interface Props {
   project: Project;
 }
 
 export function ProjectDetail({ project }: Props) {
-  const searchParams = useSearchParams();
-  const previewIndex = searchParams.get('preview');
-  const initialIndex = previewIndex ? Number(previewIndex) : undefined;
-
   return (
     <div className='container mx-auto px-4 py-8'>
       {/* 프로젝트 제목 */}
@@ -86,10 +82,19 @@ export function ProjectDetail({ project }: Props) {
                     mdWidth: 'md:w-[24rem]',
                   }}
                   index={index}
-                  openByDefault={initialIndex === index}
-                  projectId={project.id}
                 />
               ))}
+            />
+          </div>
+        )}
+
+        {/* 유튜브 소개 영상 */}
+        {project.videoId && (
+          <div>
+            <h2 className='mb-4 text-xl font-bold text-white'>소개 영상</h2>
+            <YouTubeEmbed
+              videoId={project.videoId}
+              title={`${project.title} 소개 영상`}
             />
           </div>
         )}

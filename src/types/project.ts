@@ -51,4 +51,5 @@ export interface Project {
   process?: string[];
   troubleshooting?: string[];
   carouselImages?: string[];
+  videoId?: string;
 }

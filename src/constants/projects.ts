@@ -25,6 +25,7 @@ export const projects: Project[] = [
       '/images/projects/project01/carousel2.jpg',
       '/images/projects/project01/carousel3.jpg',
     ],
+    videoId: 'pZ71dcECYb0',
     features: [
       '사용자 인증 및 권한 관리',
       '상품 검색 및 필터링',
