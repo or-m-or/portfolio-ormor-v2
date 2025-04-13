@@ -1,7 +1,7 @@
 'use client';
 
-import { ShootingStars } from './ShootingStars';
-import { StarsBackground } from './StarsBackground';
+import { ShootingStars } from '@/components/common/ShootingStars';
+import { StarsBackground } from '@/components/common/StarsBackground';
 import { UrlTag } from './UrlTag';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 // import { FaBlogger } from 'react-icons/fa6';
