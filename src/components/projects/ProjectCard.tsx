@@ -1,20 +1,27 @@
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import { Project } from '@/types/project';
 import { ProjectTag } from '@/components/projects/ProjectTag';
 import { TechStackTag } from '@/components/projects/TechStackTag';
 
-interface ProjectCardProps extends Project {}
+interface ProjectCardProps {
+  project: Project;
+}
 
-export const ProjectCard = ({
-  title,
-  imageUrl,
-  projectTag,
-  date,
-  summary,
-  techStacks,
-}: ProjectCardProps) => {
+export const ProjectCard = ({ project }: ProjectCardProps) => {
+  const router = useRouter();
+
+  if (!project) {
+    return null;
+  }
+
+  const { title, imageUrl, projectTag, date, summary, techStacks, id } = project;
+
   return (
-    <div className='group flex h-full flex-col rounded-lg transition-all hover:bg-white/5'>
+    <div
+      onClick={() => router.push(`/projects/${id}`)}
+      className='group relative flex cursor-pointer flex-col overflow-hidden rounded-lg transition-all hover:bg-zinc-800/50 hover:shadow-lg hover:shadow-gray-900/50'
+    >
       <div className='relative mb-4 aspect-video overflow-hidden rounded-lg'>
         <Image
           src={imageUrl}
@@ -28,8 +35,8 @@ export const ProjectCard = ({
           <h3 className='text-xl font-bold text-white'>{title}</h3>
           <ProjectTag tag={projectTag} />
         </div>
-        <p className='mb-4 text-sm text-white/60'>{date}</p>
-        <p className='mb-6 flex-1 text-white/80'>{summary}</p>
+        <p className='mb-4 text-sm text-gray-400'>{date}</p>
+        <p className='mb-6 flex-1 text-gray-300'>{summary}</p>
         <div className='mb-4 flex flex-wrap gap-2'>
           {techStacks.map((tech) => (
             <TechStackTag key={tech} tech={tech} />

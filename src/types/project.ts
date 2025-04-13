@@ -1,4 +1,4 @@
-export type ProjectTag = 'Personal' | 'Team';
+export type ProjectTag = 'ALL' | 'Personal' | 'Team';
 export type FilterTag = 'ALL' | ProjectTag;
 
 export type TechStack =
@@ -26,11 +26,29 @@ export type TechStack =
   | 'iOS'
   | 'Android';
 
+export interface ProjectLink {
+  label: string;
+  url: string;
+}
+
 export interface Project {
+  id: number;
   title: string;
   imageUrl: string;
   projectTag: ProjectTag;
   date: string;
   summary: string;
   techStacks: TechStack[];
+  links?: {
+    label: string;
+    url: string;
+  }[];
+  features?: string[];
+  purpose?: string;
+  results?: string[];
+  roles?: string[];
+  contributions?: string[];
+  process?: string[];
+  troubleshooting?: string[];
+  carouselImages?: string[];
 }
