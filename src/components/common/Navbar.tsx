@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-
+import Image from 'next/image';
 import { Menu } from 'lucide-react';
 
 export default function Navbar() {
@@ -35,9 +35,16 @@ export default function Navbar() {
           {/* 로고 */}
           <Link
             href='/'
-            className='font-dunggeunmo flex-shrink-0 text-2xl font-bold whitespace-nowrap text-white'
+            className='font-dunggeunmo flex flex-shrink-0 items-center space-x-2 text-2xl font-bold whitespace-nowrap text-white'
           >
-            or.m.or
+            <Image
+              src='/icons/asterisk.png'
+              alt='Logo'
+              width={24}
+              height={24}
+              className='rounded-sm'
+            />
+            <span>ormor</span>
           </Link>
 
           {/* 데스크톱 메뉴 */}
