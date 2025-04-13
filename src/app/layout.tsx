@@ -10,12 +10,6 @@ const suit = localFont({
   variable: '--font-suit',
 });
 
-const yclover = localFont({
-  src: './fonts/YClover-Bold.woff2',
-  display: 'swap',
-  variable: '--font-yclover',
-});
-
 const moneygraphy = localFont({
   src: './fonts/Moneygraphy-Rounded.woff2',
   display: 'swap',
@@ -29,9 +23,15 @@ const pretendard = localFont({
   variable: '--font-pretendard',
 });
 
+const dunggeunmo = localFont({
+  src: './fonts/DungGeunMo.woff2',
+  display: 'swap',
+  variable: '--font-dunggeunmo',
+});
+
 export const metadata: Metadata = {
-  title: 'Ormor Portfolio',
-  description: 'Ormor Portfolio',
+  title: '허태환 | 포트폴리오',
+  description: '안녕하세요. 허태환 포트폴리오 사이트에 방문해주셔서 감사합니다.',
 };
 
 export default function RootLayout({
@@ -44,7 +44,7 @@ export default function RootLayout({
   return (
     <html
       lang='ko'
-      className={`${moneygraphy.variable} ${pretendard.variable} ${suit.variable} ${yclover.variable}`}
+      className={`${moneygraphy.variable} ${pretendard.variable} ${suit.variable} ${dunggeunmo.variable}`}
     >
       <body>
         <Navbar />

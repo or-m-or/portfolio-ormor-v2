@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+
 import { Menu } from 'lucide-react';
 
 export default function Navbar() {
@@ -33,14 +33,11 @@ export default function Navbar() {
       <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
         <div className='flex h-16 items-center justify-between'>
           {/* 로고 */}
-          <Link href='/' className='flex-shrink-0'>
-            <Image
-              src='/icons/OrmorLogo.png'
-              alt='ormor logo'
-              width={40}
-              height={40}
-              priority
-            />
+          <Link
+            href='/'
+            className='font-dunggeunmo flex-shrink-0 text-2xl font-bold whitespace-nowrap text-white'
+          >
+            or.m.or
           </Link>
 
           {/* 데스크톱 메뉴 */}
