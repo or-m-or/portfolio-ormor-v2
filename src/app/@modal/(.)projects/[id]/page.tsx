@@ -3,7 +3,7 @@
 import { useParams, useRouter } from 'next/navigation';
 import { useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
-import { projects } from '@/constants/projects';
+import { PROJECTS_DATA } from '@/constants/projects';
 import { IoClose, IoExpand } from 'react-icons/io5';
 import { ProjectDetail } from '@/components/projects/ProjectDetail';
 
@@ -11,7 +11,7 @@ export default function ModalProjectPage() {
   const params = useParams();
   const router = useRouter();
   const dialogRef = useRef<HTMLDialogElement>(null);
-  const project = projects.find((item) => item.id === Number(params.id));
+  const project = PROJECTS_DATA.find((item) => item.id === Number(params.id));
 
   useEffect(() => {
     if (!dialogRef.current?.open) {

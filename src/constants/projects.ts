@@ -1,6 +1,6 @@
 import { Project } from '@/types/project';
 
-export const projects: Project[] = [
+export const PROJECTS_DATA: Project[] = [
   {
     id: 1,
     title: '쇼핑몰 플랫폼',

@@ -4,20 +4,20 @@ import { useState } from 'react';
 import { PageTitle } from '@/components/common/PageTitle';
 import { ProjectCard } from '@/components/projects/ProjectCard';
 import { ProjectFilterButton } from '@/components/projects/ProjectFilterButton';
-import { projects } from '@/constants/projects';
+import { PROJECTS_DATA } from '@/constants/projects';
 import { FilterTag } from '@/types/project';
 
 export default function ProjectsPage() {
   const [activeFilter, setActiveFilter] = useState<FilterTag>('ALL');
 
-  const filteredProjects = projects.filter((project) => {
+  const filteredProjects = PROJECTS_DATA.filter((project) => {
     if (activeFilter === 'ALL') return true;
     return project.projectTag === activeFilter;
   });
 
   const getProjectCount = (tag: FilterTag) => {
-    if (tag === 'ALL') return projects.length;
-    return projects.filter((project) => project.projectTag === tag).length;
+    if (tag === 'ALL') return PROJECTS_DATA.length;
+    return PROJECTS_DATA.filter((project) => project.projectTag === tag).length;
   };
 
   return (

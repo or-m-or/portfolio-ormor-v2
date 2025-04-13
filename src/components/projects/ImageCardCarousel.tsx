@@ -1,10 +1,9 @@
 'use client';
-import React, { useEffect, useRef, useState, createContext, useContext } from 'react';
+import React, { useEffect, useState, createContext } from 'react';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { AnimatePresence, motion } from 'motion/react';
+import { motion } from 'motion/react';
 import Image, { ImageProps } from 'next/image';
-import { useOutsideClick } from '@/hooks/use-outside-click';
 
 interface CarouselProps {
   items: JSX.Element[];
