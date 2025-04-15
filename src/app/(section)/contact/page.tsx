@@ -16,8 +16,10 @@ export default function ContactPage() {
           title='CONTACT'
           description={
             <>
-              <p>함께 일하고 싶으시다면 아래 연락처로 연락주시거나</p>
-              <p>메일을 보내주세요. 언제든 준비되어 있습니다!</p>
+              <p>
+                저에게 관심이 있으시다면, 아래 연락처로 언제든지 편하게 연락 부탁드립니다.
+              </p>
+              <p>또는 아래 폼을 통해 바로 메일을 보내실 수 있습니다.</p>
             </>
           }
           align='center'

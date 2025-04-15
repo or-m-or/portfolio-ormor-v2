@@ -6,17 +6,35 @@ import { motion } from 'framer-motion';
 const overviewItems = [
   {
     title: 'Projects',
-    description: '지금까지 진행한 프로젝트들을 살펴보세요.',
+    description: (
+      <>
+        지금까지 진행했던
+        <br />
+        프로젝트를 소개합니다 🔥
+      </>
+    ),
     href: '/projects',
   },
   {
     title: 'Skill',
-    description: '개발 과정에서의 경험과 지식을 공유합니다.',
+    description: (
+      <>
+        제가 경험해 보았고, 활용할 수 있는
+        <br />
+        기술 스택을 소개합니다 🛠️
+      </>
+    ),
     href: '/skills',
   },
   {
     title: 'Contact',
-    description: '함께 일하고 싶으시다면 연락주세요.',
+    description: (
+      <>
+        저에게 관심이 있으시다면,
+        <br />
+        언제든지 편하게 연락주세요 😺
+      </>
+    ),
     href: '/contact',
   },
 ];
